@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(180deg, #e90a0a, #ffc72c);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: #fff;
+  opacity: 0.9;
+  padding: 40px 34px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  position: relative;
+  animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #ff0000;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ff0000;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #ffc72c;
+  outline: none;
+}
+
+button {
+  padding: 14px;
+  background: linear-gradient(90deg, #ff0000, #ffc72c);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.emailysenha {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #d88b3d;
+  border-radius: 50px;
+}
+
+.emailysenha p {
+  cursor: pointer;
+  display: flex;
+  border-radius: 50px;
+  border: none;
+  transition: color 0.3s;
+}
+
+.emailysenha p:hover {
+  color: #ff0000;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.wave-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  animation: wave 6s linear infinite;
+}
